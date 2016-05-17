@@ -34,6 +34,12 @@ p {
   text-decoration: none;
 }
 
+.button a {
+  color: #fff;
+  font-size: 5em;
+  text-decoration: none;
+}
+
 #footer {
   font-size: 0.75rem;
 }
