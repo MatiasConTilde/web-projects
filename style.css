@@ -1,39 +1,26 @@
 body {
   text-align: center;
-  background-image: url("El Capitan LD.jpeg");
-  background-size: cover;
+  font-family: 'Roboto Mono', monospace;
+  color: white;
+
+  background-color: #036;
+  background-image: url("NyanCat.gif");
+  background-size: 100vh;
+  background-repeat: no-repeat;
+  background-position: top;
 }
 
 h1 {
-  font-size: 32px;
-  font-family: Palatino, 'Palatino Linotype', serif;
+  font-size: 4rem;
+  font-weight: 300;
 }
 
-h2 {
-  font-size: 56px;
-}
-
-.hero {
-  padding: 250px 0;
-  margin: 30px;
-  font-family: 'Trebuchet MS', Helvetica, sans-serif;
-  background-image: url("NyanCat.gif");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  color: #fff;
-}
-
-p {
+a {
   font-size: 2rem;
 }
 
-.hero a {
-  color: #fff;
-  font-size: 5em;
-  text-decoration: none;
-}
-
-#footer {
-  font-size: 0.75rem;
+p {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
