@@ -1,0 +1,26 @@
+body {
+  text-align: center;
+  font-family: 'Roboto Mono', monospace;
+  color: white;
+
+  background-color: #036;
+  background-image: url("NyanCat.gif");
+  background-size: 100vh;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+h1 {
+  font-size: 4rem;
+  font-weight: 300;
+}
+
+a {
+  font-size: 2rem;
+}
+
+p {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
