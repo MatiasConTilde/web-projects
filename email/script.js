@@ -1,5 +1,5 @@
-var socket = io.connect('http://localhost:3000');
-//var socket = io.connect('https://email-con-tilde.herokuapp.com');
+//var socket = io.connect('http://localhost:3000');
+var socket = io.connect('https://email-con-tilde.herokuapp.com');
 
 function send() {
   socket.emit('push', {
