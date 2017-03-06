@@ -2,7 +2,7 @@
 var socket = io.connect("https://email-con-tilde.herokuapp.com");
 
 socket.emit("confirm", {
-  email: location.search.replace("?", "")
+  secret: location.search.replace("?", "")
 });
 
 socket.on("feedback", function(data) {
