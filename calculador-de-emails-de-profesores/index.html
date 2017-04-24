@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Calculador de emails de profesores</title>
+    <script type="text/javascript" src="/media/analytics.js"></script>
+
+    <style media="screen">
+      body {
+        @import url("https://fonts.googleapis.com/css?family=Roboto+Mono:300");
+        text-align: center;
+        font-family: 'Roboto Mono', monospace;
+      }
+      a {
+        color: black;
+      }
+    </style>
+    <script type="text/javascript">
+      function calculate() {
+        const email = document.getElementById("name").value + "." + document.getElementById("surname").value + "@dsmadrid.org";
+        document.getElementById("result").innerHTML = email;
+        document.getElementById("result").href = "mailto:" + email;
+      }
+    </script>
+  </head>
+  <body>
+    <br>
+    <input type="text" id="name" value="Nombre">
+    <input type="text" id="surname" value="Appellido">
+    <button type="button" onclick="calculate()">Calcular</button>
+    <br><br>
+    <a id="result"></a>
+  </body>
+</html>
