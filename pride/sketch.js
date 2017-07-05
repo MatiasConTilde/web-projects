@@ -7,7 +7,7 @@ function setup() {
 	createCanvas(windowWidth, windowHeight);
 	noStroke();
 
-	switch (location.search.substring(1).replace(/%20/g, ' ').toLowerCase()) {
+	switch (location.search.substring(1).toLowerCase()) {
 		case 'bi':
 			colors = ['#D70270', '#734F96', '#0038A8'];
 			break;
@@ -22,6 +22,9 @@ function setup() {
 			break;
 		case 'trans':
 			colors = ['#5BCEFA', '#F5A9B8', '#FFFFFF', '#F5A9B8'];
+			break;
+		case 'queer':
+			colors = ['#B57EDC', '#FFFFFF', '#4A8123'];
 			break;
 		default:
 			colors = ['#E40303', '#FF8C00', '#FFED00', '#008026', '#004DFF', '#750787'];
