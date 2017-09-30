@@ -1,7 +1,7 @@
-var colors = [];
-var colorIndex = 0;
+let colors = [];
+let colorIndex = 0;
 
-var circles = [];
+let circles = [];
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
@@ -34,7 +34,7 @@ function setup() {
 }
 
 function draw() {
-  for (var i = 0; i < circles.length; i++) {
+  for (let i = 0; i < circles.length; i++) {
     if (circles[i].radius > (width + height)) {
       circles.splice(i, 1);
       continue;
@@ -50,7 +50,7 @@ function mousePressed() {
   circles.push(new Circle(createVector(mouseX, mouseY), colorIndex));
 }
 
-var Circle = function(pos, colorIndex) {
+let Circle = function(pos, colorIndex) {
   this.pos = pos;
   this.radius = 1;
   this.colorIndex = colorIndex;

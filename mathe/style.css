@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:300');
+
 body {
   text-align: center;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 24px;
   text-decoration: none;
   padding: 0px 32px 0px 32px;
@@ -11,7 +14,7 @@ h1 {
   padding-top: 16px;
 }
 
-ol{
+ol {
   text-align: left;
 }
 
@@ -19,4 +22,8 @@ a {
   color: grey;
   font-size: 24px;
   text-decoration: none;
+}
+
+code {
+  font-family: 'Roboto Mono', monospace;
 }
