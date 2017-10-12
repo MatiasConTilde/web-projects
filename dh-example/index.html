@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>DH example</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.3/socket.io.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+
+    <style>
+      .private {
+        color: red;
+      }
+
+      .public {
+        color: blue;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>DH example</h1>
+    <p id="info">red means private, blue means public<br></p>
+    <input type="checkbox" id="easy-numbers">
+    <label for="easy-numbers">use easy numbers (smaller than 100)</label><br>
+    <input type="checkbox" id="prm-check">
+    <label for="prm-check"><code>g</code> is primitve root modulo <code>p</code> (more secure but takes longer to calculate)</label><br>
+    <button onclick="requestPG()">Request <code>p</code> and <code>g</code> from server</button>
+    <p id="pg" class="public"></p>
+    <p id="lower" class="private"></p>
+    <p id="upper" class="public"></p>
+    <p id="sending" class="public"></p>
+    <p id="recieved" class="public"></p>
+    <p id="secret" class="private"></p>
+  </body>
+</html>
