@@ -37,7 +37,6 @@ socket.on('pg', data => {
 
   upper = powMod(data.g, lower, p);
   document.getElementById('upper').innerHTML = '<code>' + (order==1?'A':'B') + ' = g^' + (order==1?'a':'b') + ' mod p = ' + data.g + '^' + lower + ' mod ' + p + ' = ' + upper + '</code><br><button onclick="sendUpper()">Send <code>' + (order==1?'A':'B') + '</code></button>';
-  sendUpper();
 });
 
 function sendUpper() {
